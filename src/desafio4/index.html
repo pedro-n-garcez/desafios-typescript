@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <div style="display: flex;">
+        <div style="display: flex; width: 300px; height: 100px; justify-content: space-between; flex-direction: column;">
+            <input id="login" placeholder="Login" onchange="preencherLogin(event)">
+            <input id="senha" placeholder="Senha" type="password" onchange="preencherSenha(event)">
+            <input id="api-key" placeholder="Api Key" onchange="preencherApi()">
+            <button id="login-button" disabled>Login</button>
+            <span id="login-confirmation"></span>
+        </div>
+        <div id="search-container" style="margin-left: 20px">
+            <input id="search" placeholder="Buscar filme...">
+            <button disabled id="search-button">Pesquisar Filme</button>
+        </div>
+        <div id="list-container" style="display:flex; flex-direction: column; margin-left: 80px">
+            <div class="create" style="flex-direction: row; justify-content: center;">
+                <button disabled id="create-list">Criar Lista</button>
+                <input id="list-name-input" placeholder="Nome da lista...">
+                <input id="list-description-input" placeholder="Descrição da lista...">
+            </div>
+            <div class="get" style="flex-direction: row; justify-content: center;">
+                <button disabled id="get-list">Pegar Lista</button>
+                <input id="get-list-input" placeholder="ID da lista...">
+            </div>
+            <div class="add" style="flex-direction: row; justify-content: center;">
+                <button disabled id="add-film-list">Adicionar filme à lista</button>
+                <input id="add-film-list-input" placeholder="ID do filme...">
+            </div>
+        </div>
+        <span id="current-list-id" style="margin-left: 150px">Current List ID: </span>
+      </div>
+</body>
+</html>
