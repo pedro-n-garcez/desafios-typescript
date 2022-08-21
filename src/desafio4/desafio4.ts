@@ -167,8 +167,6 @@ function criarCaixaFilme(item) : HTMLDivElement {
   let title = document.createElement('p');
   let releaseDate = document.createElement('p');
   let id = document.createElement('p');
-  let addFilmButton = document.createElement('button');
-  addFilmButton.textContent = "Adicionar Filme";
 
   title.appendChild(document.createTextNode(`Título: ${item.original_title}`));
   releaseDate.appendChild(document.createTextNode(`Data de lançamento: ${item.release_date}`));
